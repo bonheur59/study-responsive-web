@@ -1,0 +1,57 @@
+#시멘틱 태그를 이용한 레이아웃 연습
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layout1</title>
+    <style>
+      #wrap {
+        width: 1000px;
+        margin: 0 auto;
+      }
+     
+      header {
+        width: 1000px;
+        height: 100px;
+        background: #111;
+      }
+      nav {
+        width: 1000px;
+        height: 100px;
+        background: #222;
+      }
+      aside {
+        width: 300px;
+        height: 600px;
+        background: #333;
+        float: left;
+      }
+      section {
+        width: 700px;
+        height: 600px;
+        background: #444;
+        float: left;
+      }
+      footer {
+        width: 1000px;
+        height: 100px;
+        background: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- <div class="header">헤더</div>
+      <div class="nav">네브</div>
+      <div class="side">사이드</div>
+      <div class="contents">콘텐츠</div>
+      <div class="footer">푸터</div> -->
+      <header>헤더</header>
+      <nav>네브</nav>
+      <aside>사이드</aside>
+      <section>콘텐츠</section>
+      <footer>푸터</footer>
+    </div>
+  </body>
+</html>

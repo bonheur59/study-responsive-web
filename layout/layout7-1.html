@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: #fffde7;
+    }
+    #wrap {
+      width: 1200px;
+      margin: 0 auto;
+    }
+    .header {
+      width: 100%;
+      height: 100px;
+      background-color: #b2defe;
+    }
+    .section1 {
+      width: 100%;
+      height: 300px;
+      background-color: #7ecbfd;
+    }
+    .nav {
+      width: 33.3333%;
+      height: 400px;
+      float: left;
+      background-color: #43b5fc;
+    }
+    .section2-1 {
+      width: 66.6666%;
+      height: 200px;
+      float: left;
+      background-color: #00a5fb;
+    }
+    .section2-2 {
+      width: 66.6666%;
+      height: 200px;
+      float: left;
+      background-color: #0096fa;
+    }
+    .article1 {
+      width: 33.3333%;
+      height: 300px;
+      clear: both;
+      float: left;
+      background-color: #0088ec;
+    }
+    .article2 {
+      width: 33.3333%;
+      height: 300px;
+      float: left;
+      background-color: #0076d9;
+    }
+    .article3 {
+      width: 33.3333%;
+      height: 300px;
+      float: left;
+      background-color: #0064c6;
+    }
+    .section3 {
+      width: 90%;
+      clear: both;
+      overflow: hidden;
+      padding: 5%;
+      background-color: #00a6fc;
+    }
+    .section3 > div {
+      width: 21%;
+      height: 150px;
+      float: left;
+      margin: 2%;
+      border-radius: 5px;
+      background-color: #0076d9;
+    }
+    .footer {
+      width: 100%;
+      height: 100px;
+      background-color: #43b5fc;
+    }
+
+    /* 화면 너비 0 ~ 1200px */
+    @media (max-width: 1220px) {
+      #wrap {
+        width: 100%;
+      }
+      .article1 {
+        width: 50%;
+        height: 300px;
+        clear: both;
+        float: left;
+        background-color: #0088ec;
+      }
+      .article2 {
+        width: 50%;
+        height: 300px;
+        float: left;
+        background-color: #0076d9;
+      }
+      .article3 {
+        display: none;
+      }
+
+      .section3 > div {
+        width: 29.3333%;
+      }
+      .section3 > div:nth-child(4) {
+        display: none;
+      }
+    }
+
+    /* 화면 너비 0 ~ 768px */
+    @media (max-width: 768px) {
+      .article1 {
+        width: 100%;
+        height: 200px;
+        background-color: #0088ec;
+      }
+      .article2 {
+        width: 100%;
+        height: 200px;
+        background-color: #0076d9;
+      }
+      .article3 {
+        display: none;
+      }
+
+      .section3 > div {
+        width: 29.3333%;
+      }
+      .section3 > div:nth-child(4) {
+        display: none;
+      }
+    }
+    /* 화면 너비 0 ~ 480px */
+    @media (max-width: 480px) {
+      #wrap {
+        width: 100%;
+      }
+
+      .nav {
+        width: 100%;
+        height: 200px;
+        background-color: #43b5fc;
+      }
+      .section2-1 {
+        width: 100%;
+        height: 200px;
+        background-color: #00a5fb;
+      }
+      .section2-2 {
+        width: 100%;
+        height: 200px;
+        background-color: #0096fa;
+      }
+
+      .section3 > div {
+        width: 100%;
+      }
+      .section3 > div:nth-child(4) {
+        display: none;
+      }
+    }
+  </style>
+  <body>
+    <div id="wrap">
+      <header class="header"></header>
+      <section class="section1"></section>
+      <nav class="nav"></nav>
+      <section class="section2-1"></section>
+      <section class="section2-2"></section>
+      <article class="article1"></article>
+      <article class="article2"></article>
+      <article class="article3"></article>
+      <section class="section3">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+      <footer class="footer"></footer>
+    </div>
+  </body>
+</html>
